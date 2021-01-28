@@ -1,0 +1,20 @@
+安装git，官方地址下载
+一般默认设置成环境系统变量 path  C:\Program Files\Git\cmd
+重启电脑，使得git命令进入到环境变量 或者关闭cmd，在重启
+
+初始化：设置账户名，申请邮箱
+git config --global user.name "optslience"
+git config --global user.email "yanchengzx123@163.com"
+
+在git官方新建一个项目repository
+
+cd  传输文件地址
+git init 
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/optslience/radar_plot.git  
+#这边有两种模式https或者ssh，在git官网主页  responsibility中会显示,一般选择https
+git push -u origin main
+
+重新上传得删除文件夹相关的git文件
